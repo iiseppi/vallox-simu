@@ -189,7 +189,7 @@ async def main():
     simulator = ValloxSimulator(context)
     asyncio.create_task(simulator.run_simulation())
 
-    print("--- Vallox Modbus TCP Simulaattori v3.0 (Ultimate) ---")
+    print("Vallox Modbus TCP Simulaattori v3.0")
     print("Palvelin käynnistyy portissa 5020...")
     await StartAsyncTcpServer(context=context, address=("0.0.0.0", 5020))
 
